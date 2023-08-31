@@ -56,6 +56,11 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 		return (1);
 	if (!tree->left && tree->right)
 		return (0);
+	if (tree->left->right)
+	{
+		if (tree->left->right->right && !tree->left->right->left)
+			return (0);
+	}
 	return (binary_tree_is_complete(tree->left) &&
 			binary_tree_is_full(tree->right) &&
 			(binary_tree_height(tree->left) -
