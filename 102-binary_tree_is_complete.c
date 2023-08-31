@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 int binary_tree_is_complete_helper(
-                const binary_tree_t *tree, size_t index, size_t size);
+		const binary_tree_t *tree, size_t index, size_t size);
 size_t binary_tree_size(const binary_tree_t *tree);
 
 /**
