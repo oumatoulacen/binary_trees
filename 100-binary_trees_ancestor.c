@@ -23,7 +23,7 @@ binary_tree_t *binary_trees_ancestor(
 	while (ancestor != NULL)
 	{
 		if (binary_tree_is_ancestor(ancestor, second))
-			return (ancestor);
+			return (binary_tree_t *)(ancestor);
 		ancestor = ancestor->parent;
 	}
 	return (NULL);
